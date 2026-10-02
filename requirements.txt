@@ -1,0 +1,15 @@
+# Requirements for Project.ipynb (young-adult interstate migration ABM)
+# Recommended Python: 3.12 (any of 3.10-3.13 works with these pins)
+#
+# Core packages are pinned to the exact versions recorded in the notebook's
+# final verification cell, so re-runs reproduce the cached results
+# (that cell checks live runs against the cached CSVs to within 1e-9).
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.10.6
+joblib==1.5.3
+
+# To run the notebook itself (the notebook uses display(), which needs IPython)
+ipykernel
+notebook
