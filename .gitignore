@@ -1,0 +1,11 @@
+.venv/
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.vscode/
+Rubric_CITS4403_Project-2.pdf
+
+# Original local run package (rebuild scripts still to be moved into the repo)
+0914-1_v8_runnable/

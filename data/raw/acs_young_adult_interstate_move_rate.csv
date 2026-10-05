@@ -1,0 +1,2 @@
+year,age_min,age_max,move_rate,weighted_population,weighted_interstate_movers,unweighted_population,unweighted_interstate_movers,scope,source,source_files
+2023,18,35,0.03874576568986441,36550523.0,1416178.0,334763,14273,eight modeled states,2023 ACS 1-year PUMS person records; exact ages 18–35; PWGTP-weighted; scope=eight modeled states,psam_p06.csv;psam_p48.csv;psam_p36.csv;psam_p12.csv;psam_p25.csv;psam_p37.csv;psam_p17.csv;psam_p53.csv

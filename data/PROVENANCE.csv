@@ -1,0 +1,30 @@
+file,source,content_and_settings,verification
+acs_young_adult_interstate_move_rate.csv,Real data,"2023 ACS 1-year PUMS person files for the eight states; ages 18–35; mover = MIG==3, MIGSP in 1–56 and different from current state; PWGTP-weighted","Identical to cell 14 (0.03875; 36,550,523 / 1,416,178 / 334,763 / 14,273)"
+acs_young_adult_interstate_move_rate_by_state.csv,Real data,"As above, by state",Not read by v8; reference only
+acs_young_adult_interstate_move_rate_by_age.csv,Real data,"As above, by single year of age",Not read by v8; reference only
+pums_external_origin_competition.csv,Real data,Share of 18–35 interstate in-movers whose previous state is outside the eight modelled states (Puerto Rico counted as outside),Identical to cell 16 (overall 0.620; all eight states match)
+baseline_runs.csv,Re-simulated,No policy; 1000 agents x 20 years; seeds 101–108,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 26; mean move rate 0.0413)
+cross_experiment_runs.csv,Re-simulated,E1: 4 policies x 3 tie strengths; 600 agents x 12 years; seeds 201–208,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 28); cell 71 live re-run of 4 cases agrees within 1e-9
+cross_experiment_summary.csv,Re-simulated,E1 summary,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 28; 12 rows x 11 columns)
+paired_policy_effects.csv,Re-simulated,"E1 paired differences. Two blocks: first 12 rows = strong-minus-weak summary (stored to 4 decimals, as in the original); next 72 rows = per-seed paired differences","Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cells 32, 34, 69). Cell 32 therefore also lists NaN rows; values unchanged"
+interaction_modification.csv,Re-simulated,Strong-minus-weak difference in policy effect; paired t interval,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 30)
+tulsa_reference_runs.csv,Re-simulated,"Migration incentive only, intensity 1.0 ($10k reference); 600 agents x 12 years; seeds 201–208",Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 41: 0.396 ± 0.075)
+tulsa_reference_summary.csv,Re-simulated,Tulsa reference summary,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit
+shock_runs.csv,Re-simulated,E5: 4 shock scenarios; 600 agents x 15 years; seeds 401–406,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 53)
+shock_summary.csv,Re-simulated,E5 summary,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit
+entrant_robustness_runs.csv,Re-simulated,R1: entrant assumptions 2x2; 600 agents x 15 years; seeds 501–504,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 58)
+social_threshold_sensitivity_runs.csv,Re-simulated,R2: threshold 0.20/0.35/0.50 x no policy/combined; 600 agents x 12 years; seeds 501–504,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 60)
+social_threshold_sensitivity_summary.csv,Re-simulated,R2 summary,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit
+network_homophily_runs.csv,Re-simulated,R3: same-home contact share 0/0.5 x no policy/combined; 600 agents x 12 years; seeds 501–504,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 60)
+network_homophily_summary.csv,Re-simulated,R3 summary,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit
+parameter_sensitivity_runs.csv,Re-simulated,"R4: stay preference x 0.85/1.00/1.15, combined policy; 600 agents x 12 years; seeds 501–504. Only policy_scale = 1.0 (the only level v8 uses)",Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 61)
+rent_feedback_sensitivity_runs.csv,Re-simulated,"R5: rent elasticity 0/0.10/0.15/0.20; combined policy intensity 2.0, medium ties; 600 agents x 12 years; seeds 501–504",Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit (cell 63)
+rent_feedback_sensitivity_summary.csv,Re-simulated,R5 summary,Re-simulated with the v8 model code; matches the outputs saved in v8 to every printed digit
+move_rate_calibration.csv,Rebuilt from v8 printed output,"Simulated move rate at three beta_current_state values. The original came from an earlier model build and cannot be reproduced with v8 code (v8 baseline at 3.925 gives 0.0413, not 0.0386)",Values entered from cell 24; every printed digit matches; calibrated value 3.925 unchanged
+state_competition_summary.csv,Rebuilt from v8 printed output,"E6: the state-specific incentive formula is not in v8, so it cannot be re-simulated","Means over 6 seeds are multiples of 1/6, so cell 56 two-decimal values recover them exactly; columns state and mean_net_migration only"
+brfss_2023_coverage_audit.csv,Rebuilt from v8 printed output,BRFSS 2023 Social Determinants module coverage (v8 section 13.3; CDC documentation),Matches cell 65
+brfss_validation_status.csv,Rebuilt from v8 printed output,5 of 8 states covered; eight-state Spearman not estimated,The reason text is truncated in v8; its second half was completed from section 13.3
+lever_intensity_sweep_runs.csv,Original file,"From the original abm_outputs_research_plan_v7 folder, unchanged",—
+state_intensity_sweep_runs.csv,Original file,As above,—
+network_decay_runs.csv,Original file,As above,—
+open_system_runs.csv,Original file,As above,—
