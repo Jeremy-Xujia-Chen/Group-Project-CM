@@ -6,6 +6,9 @@ __pycache__/
 .venv/
 .vscode/
 Rubric_CITS4403_Project-2.pdf
+assessment_information.md
+Report ABM.docx
+notebooks/project_annotated.ipynb
 
 # Original local run package (rebuild scripts still to be moved into the repo)
 0914-1_v8_runnable/
