@@ -1,0 +1,2 @@
+covered_model_states,total_model_states,complete_eight_state_spearman_estimated,reason
+5,8,False,"2023 Social Determinants module not fielded in FL, TX or WA; an eight-state Spearman correlation would compare missing-by-design samples"

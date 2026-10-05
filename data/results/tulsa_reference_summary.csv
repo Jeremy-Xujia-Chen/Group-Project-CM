@@ -1,0 +1,2 @@
+reference_amount_usd,model_mean_induced_share,model_ci95_halfwidth,bartik_low,bartik_high,interpretation
+10000,0.3955478544742878,0.07457935242664727,0.58,0.7,external reference only; not calibration

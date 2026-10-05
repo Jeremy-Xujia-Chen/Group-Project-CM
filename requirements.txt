@@ -1,4 +1,4 @@
-# Requirements for Project.ipynb (young-adult interstate migration ABM)
+# Requirements for notebooks/project.ipynb and src/ (young-adult interstate migration ABM)
 # Recommended Python: 3.12 (any of 3.10-3.13 works with these pins)
 #
 # Core packages are pinned to the exact versions recorded in the notebook's
